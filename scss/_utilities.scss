@@ -1,6 +1,6 @@
 .container {
   max-width: $website-width;
-  padding: 1.5rem;
+  padding: 0 1.5rem;
   margin: auto;
   overflow: hidden;
 }
@@ -36,23 +36,25 @@
 
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
-input[class^='btn-']:hover, {
+input[class^='btn-']:hover {
   background-color: $main-color;
 }
 
-//Backgrounds
+// Backgrounds
 .bg {
   &-main {
     background: $main-color;
     color: set-text-color($main-color);
   }
   &-dark {
-    background: $darj-color;
+    background: $dark-color;
     color: set-text-color($dark-color);
-  }&-light {
+  }
+  &-light {
     background: $light-color;
     color: set-text-color($light-color);
-  }&-medium {
+  }
+  &-medium {
     background: $medium-color;
     color: set-text-color($medium-color);
   }
@@ -67,40 +69,34 @@ input[class^='btn-']:hover, {
   text-align: center;
 }
 
-//Padding
+// Padding
 .py {
   &-1 {
     padding: 1rem 0;
   }
-
   &-2 {
     padding: 2rem 0;
   }
-
   &-3 {
     padding: 3rem 0;
   }
-
   &-4 {
     padding: 4rem 0;
   }
 }
 
-//Margin
+// Margin
 .my {
   &-1 {
     margin: 1rem 0;
   }
-
   &-2 {
     margin: 2rem 0;
   }
-
   &-3 {
     margin: 3rem 0;
   }
-
-  &-2 {
+  &-4 {
     margin: 4rem 0;
   }
 }
